@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="color-box" [ngStyle]="{'background-color': currentColor}"></div>
+    <div class="button-group">
+        <p> Choose color</p>
+        <button *ngFor="let color of colors" [ngStyle]="{'background-color': color}" (click)="changeColor(color)">
+            {{ color }}
+        </button>
+    </div>
+</div>
